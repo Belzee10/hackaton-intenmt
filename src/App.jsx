@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-import React, { useState, useEffect, useCallback, useRef } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./App.css";
 import { Editor, EditorState, ContentState } from "draft-js";
 import axios from "axios";
@@ -94,7 +94,7 @@ function App() {
     }
   };
 
-  const debounceFunc = useCallback(debounce(getLang, 400), []);
+  const debounceFunc = useCallback(debounce(getLang, 1000), []);
 
   const handleEditorChange = (value, item) => {
     console.log("change");
