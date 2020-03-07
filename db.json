@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "id": "0",
+      "source": "Mit Mitarbeitenden Rabatt in Kombination mit Sunrise Home (20% + 10% Kombirabatt)",
+      "language": { "source": "de", "target": "en" }
+    },
+    {
+      "id": "1",
+      "source": "Regulärer Preis:",
+      "language": { "source": "de", "target": "en" }
+    },
+    {
+      "id": "2",
+      "source": "AnstattCHF 90.00pro Monat",
+      "language": { "source": "de", "target": "en" }
+    }
+  ]
+}

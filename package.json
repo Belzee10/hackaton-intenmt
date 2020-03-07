@@ -3,15 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "draft-js": "^0.11.4",
+    "material-icons-react": "^1.0.4",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "tailwindcss": "^1.2.0",
+    "uuid": "^7.0.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start:db": "json-server --watch db.json --port 3004",
+    "build:style": "tailwind build src/index.css -o src/tailwind.css",
+    "start": "npm run build:style && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
